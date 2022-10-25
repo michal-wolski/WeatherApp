@@ -1,52 +1,38 @@
 @charset "UTF-8";
 .date-container-bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: rgba(16, 33, 54, 0.8);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Lato';
+  align-items: center;
+  font-family: "Lato";
   font-style: normal;
   font-weight: 300;
   color: #FFFFFF;
   position: relative;
   margin: 0 auto;
 }
-
 @media screen and (max-width: 768px) {
   .date-container-bg {
-    -webkit-box-shadow: 0px 5px 33px rgba(16, 33, 54, 0.6);
-            box-shadow: 0px 5px 33px rgba(16, 33, 54, 0.6);
+    box-shadow: 0px 5px 33px rgba(16, 33, 54, 0.6);
     width: 280px;
     height: 190px;
     border-radius: 34px;
     margin-top: 36px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .date-container-bg {
-    -webkit-box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
-            box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
+    box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
     width: 500px;
     height: 278px;
     border-radius: 34px;
     margin-top: 40px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .date-container-bg {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
-            box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
+    flex-wrap: wrap;
+    box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
     width: 630px;
     height: 278px;
     border-radius: 34px 34px 34px 34px;
@@ -55,23 +41,12 @@
 
 @media screen and (max-width: 768px) {
   .city-date__month-time-sunset-sunrise {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .city-date__day {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     font-size: 45px;
     line-height: 54px;
@@ -86,15 +61,9 @@
     padding-left: 10px;
   }
   .city-date__month-and-time {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -107,16 +76,10 @@
   }
   .city-date__month-and-time-right-elem {
     padding-left: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .city-date__sunrise-and-sunset {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     display: flex;
     font-weight: 400;
@@ -129,23 +92,13 @@
     padding-right: 50px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .city-date__month-time-sunset-sunrise {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .city-date__day {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     font-size: 90px;
     line-height: 108px;
@@ -157,8 +110,6 @@
     padding-right: 40px;
   }
   .city-date__month-and-time {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     font-weight: 400;
     font-size: 18px;
@@ -171,8 +122,6 @@
     position: relative;
   }
   .city-date__sunrise-and-sunset {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     font-weight: 400;
     font-size: 18px;
@@ -184,24 +133,14 @@
     padding-right: 70px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .city-date__month-time-sunset-sunrise {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     text-align: left;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .city-date__day {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     font-size: 90px;
     line-height: 108px;
@@ -212,8 +151,6 @@
     padding-right: 50px;
   }
   .city-date__month-and-time {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     font-weight: 400;
     font-size: 18px;
@@ -227,8 +164,6 @@
     padding-right: 40px;
   }
   .city-date__sunrise-and-sunset {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     font-weight: 400;
     font-size: 18px;
@@ -267,7 +202,7 @@
   border-style: none;
   padding: 0px 12px 0px 12px;
   background: #FFFFFF;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 14px;
   cursor: pointer;
 }
@@ -277,31 +212,22 @@
 }
 
 .btn-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
 }
+.btn-container--margin {
+  margin-top: 200px;
+}
 
 .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }
 
 .submit-btn {
@@ -321,7 +247,6 @@
   border-style: none;
   padding-left: 20px;
 }
-
 @media screen and (max-width: 768px) {
   .search-bar {
     width: 280px;
@@ -329,7 +254,6 @@
     font-size: 14px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .search-bar {
     width: 500px;
@@ -337,7 +261,6 @@
     font-size: 18px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .search-bar {
     width: 520px;
@@ -352,14 +275,12 @@
     margin-left: 20px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .quote-container {
     width: 379px;
     margin-top: 63px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .quote-container {
     width: 340px;
@@ -367,14 +288,13 @@
 }
 
 .quote-txt {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 400;
   font-style: italic;
   letter-spacing: 4%;
   text-align: right;
   color: #FFFFFF;
 }
-
 @media screen and (max-width: 768px) {
   .quote-txt {
     font-size: 14px;
@@ -382,7 +302,6 @@
     margin-bottom: 15px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .quote-txt {
     font-size: 22px;
@@ -390,7 +309,6 @@
     margin-bottom: 20px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .quote-txt {
     font-size: 22px;
@@ -400,7 +318,7 @@
 }
 
 .quote-author {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -412,9 +330,8 @@
 .quotation-marks {
   position: absolute;
   color: #FFFFFF;
-  font-family: 'Lato';
+  font-family: "Lato";
 }
-
 @media screen and (max-width: 768px) {
   .quotation-marks {
     width: 21.62px;
@@ -423,7 +340,6 @@
     top: 684px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .quotation-marks {
     width: 49.42px;
@@ -432,7 +348,6 @@
     left: 613.42px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .quotation-marks {
     width: 49.42px;
@@ -443,40 +358,31 @@
 }
 
 .weather-container {
-  background-color: #102136;
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(16, 33, 54);
+  box-shadow: 0px 5px 33px rgba(16, 33, 54, 0.6);
   display: flex;
+  justify-content: center;
+  margin-top: 20px;
   margin: 0 auto;
 }
-
 @media screen and (max-width: 768px) {
   .weather-container {
-    -webkit-box-shadow: 0px 5px 33px rgba(16, 33, 54, 0.6);
-            box-shadow: 0px 5px 33px rgba(16, 33, 54, 0.6);
     width: 280px;
     height: 190px;
     border-radius: 34px;
     margin-top: 20px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .weather-container {
-    -webkit-box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
-            box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
     width: 500px;
     height: 300px;
     border-radius: 34px;
     margin-top: 20px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .weather-container {
-    -webkit-box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
-            box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
     width: 450px;
     height: 300px;
     border-radius: 34px 34px 34px 34px;
@@ -485,86 +391,54 @@
 }
 
 .min-max-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 20px;
-  width: 72px;
-  height: 40px;
+  justify-content: center;
+  align-content: center;
 }
 
 .weather-txt-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .weather-txt-container {
-    margin-top: 9px;
+    padding: 0;
   }
 }
-
 .weather_section_city_pogoda {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-top: 20px;
+  flex-direction: row;
+  align-items: center;
 }
-
 @media screen and (min-width: 768px) {
   .weather_section_city_pogoda {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
+    align-items: baseline;
   }
 }
 
 .weather_section_city_name {
   width: 101px;
   height: 26px;
-  font-family: 'Lato';
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-family: "Lato";
+  align-items: center;
   text-align: center;
   color: #767d85;
 }
-
 @media screen and (max-width: 768px) {
   .weather_section_city_name {
     font-size: 16px;
     line-height: 19px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .weather_section_city_name {
     font-size: 18px;
     line-height: 22px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .weather_section_city_name {
     font-size: 18px;
@@ -573,15 +447,11 @@
 }
 
 .today_current_temp {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 300;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
   letter-spacing: 0.04em;
+  color: #fff;
 }
-
 @media screen and (max-width: 768px) {
   .today_current_temp {
     width: 75px;
@@ -590,7 +460,6 @@
     line-height: 54px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .today_current_temp {
     width: 90px;
@@ -599,7 +468,6 @@
     line-height: 108px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .today_current_temp {
     width: 90px;
@@ -610,14 +478,9 @@
 }
 
 .today_temp_txt {
-  font-family: 'Lato';
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+  font-family: "Lato";
   color: #767d85;
 }
-
 @media screen and (max-width: 768px) {
   .today_temp_txt {
     width: 26px;
@@ -626,7 +489,6 @@
     line-height: 17px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .today_temp_txt {
     width: 50px;
@@ -635,7 +497,6 @@
     line-height: 22px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .today_temp_txt {
     width: 50px;
@@ -646,14 +507,9 @@
 }
 
 .today_temp_value {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  font-family: 'Lato';
+  font-family: "Lato";
   color: #FFFFFF;
 }
-
 @media screen and (max-width: 768px) {
   .today_temp_value {
     width: 26px;
@@ -662,7 +518,6 @@
     line-height: 19px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .today_temp_value {
     width: 50px;
@@ -671,7 +526,6 @@
     line-height: 22px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .today_temp_value {
     width: 50px;
@@ -679,6 +533,12 @@
     font-size: 18px;
     line-height: 22px;
   }
+}
+
+.min-max-txt-div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 h1,
@@ -714,27 +574,20 @@ body {
 }
 
 .section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   overflow: hidden;
 }
-
 @media screen and (max-width: 768px) {
   .section {
     width: 320px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .section {
     width: 768px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .section {
     width: 1280px;
@@ -746,24 +599,16 @@ body {
 }
 
 .date-quote__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 300px;
 }
-
 @media screen and (max-width: 768px) {
   .date-quote__container {
     display: inline;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .date-quote__container {
     display: inline;
@@ -771,32 +616,22 @@ body {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
 }
-
 @media screen and (max-width: 768px) {
   .container {
     width: 315px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .container {
     width: 760px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .container {
     width: 1275px;
@@ -806,10 +641,8 @@ body {
 /*elementy tła */
 .bg-square {
   border: 4px solid rgba(255, 255, 255, 0.15);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
+  box-sizing: border-box;
+  transform: rotate(-30deg);
   width: 197.85px;
   height: 197.85px;
   border-radius: 30px;
@@ -834,65 +667,45 @@ body {
 }
 
 .history {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
-
 @media screen and (max-width: 768px) {
   .history {
     margin-top: 20px;
     font-size: 12px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .history {
     margin-top: 20px;
   }
 }
-
 .history_button {
   color: #fff;
   font-size: 14px;
   background-color: rgba(16, 33, 54, 0.5);
   border-radius: 28px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0px 12px;
   min-width: 72px;
   height: 28px;
   margin: 0 5px;
 }
-
 .history_button_link {
   color: #fff;
 }
-
 .history_button_delete {
   margin-left: 10px;
   color: #fff;
 }
-
 .history_unvisable {
   visibility: hidden;
 }
-
 .history_arrow {
   border-radius: 50%;
   width: 28px;
@@ -902,17 +715,13 @@ body {
 }
 
 .Day5CityName {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 34px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
@@ -920,75 +729,49 @@ body {
 }
 
 .Days5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
   background: rgba(16, 33, 54, 0.8);
-  -webkit-box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
-          box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
+  box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
   border-radius: 34px;
   margin: 0 auto;
   /* width */
 }
-
 @media screen and (max-width: 768px) {
   .Days5 {
     width: 280px;
     padding: 76px 20px 30px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .Days5 {
     width: 620px;
     padding: 40px 0px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .Days5 {
     width: 1060px;
     padding: 40px 80px;
   }
 }
-
 .Days5-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   overflow: auto;
 }
-
 .Days5_viev {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
 }
-
 @media screen and (max-width: 768px) {
   .Days5_viev {
     height: 154px;
     width: 82px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .Days5_viev {
     height: 190px;
@@ -996,7 +779,6 @@ body {
     margin: 0 10px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .Days5_viev {
     height: 228px;
@@ -1004,26 +786,18 @@ body {
     margin: 0 30px;
   }
 }
-
 .Days5_viev__temp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 .Days5_viev__temp p {
   line-height: 22px;
   color: #ffffff;
   opacity: 0.55;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   text-align: center;
 }
-
 @media screen and (max-width: 768px) {
   .Days5_viev__temp p {
     font-weight: 400;
@@ -1032,7 +806,6 @@ body {
     width: 41px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .Days5_viev__temp p {
     font-weight: 400;
@@ -1041,7 +814,6 @@ body {
     width: 50px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .Days5_viev__temp p {
     font-weight: 400;
@@ -1050,26 +822,18 @@ body {
     width: 60px;
   }
 }
-
 .Days5_viev__tempValue {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   color: #ff6b09;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   font-size: 25px;
   line-height: 30px;
 }
-
 .Days5_viev__tempValue p {
   text-align: center;
 }
-
 @media screen and (max-width: 768px) {
   .Days5_viev__tempValue p {
     font-weight: 400;
@@ -1078,7 +842,6 @@ body {
     width: 41px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .Days5_viev__tempValue p {
     font-weight: 700;
@@ -1087,7 +850,6 @@ body {
     width: 50px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .Days5_viev__tempValue p {
     font-weight: 700;
@@ -1096,16 +858,14 @@ body {
     width: 60px;
   }
 }
-
 .Days5_viev__week {
   color: #fff;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   text-align: center;
   letter-spacing: 0.04em;
   opacity: 0.55;
 }
-
 @media screen and (max-width: 768px) {
   .Days5_viev__week {
     font-weight: 400;
@@ -1113,7 +873,6 @@ body {
     line-height: 14px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .Days5_viev__week {
     font-weight: 400;
@@ -1121,7 +880,6 @@ body {
     line-height: 17px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .Days5_viev__week {
     font-weight: 400;
@@ -1129,15 +887,13 @@ body {
     line-height: 22px;
   }
 }
-
 .Days5_viev__day {
-  color: white;
-  font-family: 'Lato';
+  color: rgb(255, 255, 255);
+  font-family: "Lato";
   font-style: normal;
   text-align: center;
   letter-spacing: 0.04em;
 }
-
 @media screen and (max-width: 768px) {
   .Days5_viev__day {
     font-weight: 400;
@@ -1145,7 +901,6 @@ body {
     line-height: 19px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .Days5_viev__day {
     font-weight: 400;
@@ -1153,7 +908,6 @@ body {
     line-height: 22px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .Days5_viev__day {
     font-weight: 400;
@@ -1161,9 +915,8 @@ body {
     line-height: 30px;
   }
 }
-
 .Days5_viev__moreInfo {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -1172,109 +925,85 @@ body {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
-
 .Days5_viev__moreInfo a {
   color: #ffffff;
   opacity: 0.3;
 }
-
 .Days5_viev__icon {
   background-size: cover;
 }
-
 @media screen and (max-width: 768px) {
   .Days5_viev__icon {
     width: 30px;
     height: 30px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .Days5_viev__icon {
     width: 60px;
     height: 60px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .Days5_viev__icon {
     width: 75px;
     height: 75px;
   }
 }
-
 .Days5_viev__icon01n {
   background-image: url("../images/01d.png");
 }
-
 .Days5_viev__icon02n {
   background-image: url("../images/02d.png");
 }
-
 .Days5_viev__icon03n {
   background-image: url("../images/03d.png");
 }
-
 .Days5_viev__icon04n {
   background-image: url("../images/04d.png");
 }
-
 .Days5_viev__icon09n {
   background-image: url("../images/09d.png");
 }
-
 .Days5_viev__icon10n {
   background-image: url("../images/10d.png");
 }
-
 .Days5_viev__icon11n {
   background-image: url("../images/11d.png");
 }
-
 .Days5_viev__icon13n {
   background-image: url("../images/13d.png");
 }
-
 .Days5_viev__icon50n {
   background-image: url("../images/50d.png");
 }
-
 .Days5_viev__icon01d {
   background-image: url("../images/01d.png");
 }
-
 .Days5_viev__icon02d {
   background-image: url("../images/02d.png");
 }
-
 .Days5_viev__icon03d {
   background-image: url("../images/03d.png");
 }
-
 .Days5_viev__icon04d {
   background-image: url("../images/04d.png");
 }
-
 .Days5_viev__icon09d {
   background-image: url("../images/09d.png");
 }
-
 .Days5_viev__icon10d {
   background-image: url("../images/10d.png");
 }
-
 .Days5_viev__icon11d {
   background-image: url("../images/11d.png");
 }
-
 .Days5_viev__icon13d {
   background-image: url("../images/13d.png");
 }
-
 .Days5_viev__icon50d {
   background-image: url("../images/50d.png");
 }
-
 .Days5_hiden {
   visibility: hidden;
   margin: 0;
@@ -1282,25 +1011,14 @@ body {
 }
 
 .more-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   overflow: auto;
 }
-
 .more-info__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 25px;
   height: 218px;
@@ -1309,64 +1027,51 @@ body {
   padding: 15px 16px;
   color: #fff;
 }
-
 .more-info__time {
-  font-family: 'lato';
+  font-family: "lato";
   font-size: 14px;
   opacity: 0.54;
 }
-
 .more-info__temp {
   color: #ff6b09;
-  font-family: 'lato';
+  font-family: "lato";
   font-weight: 700;
   font-size: 25px;
 }
-
 .more-info__detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .more-info__detail-pressure {
   width: 20px;
   height: 20px;
   background-image: url("../images/barometer.png");
   background-size: cover;
 }
-
 .more-info__detail-humidity {
   width: 20px;
   height: 20px;
   background-image: url("../images/humidity.png");
   background-size: cover;
 }
-
 .more-info__detail-wind {
   width: 20px;
   height: 20px;
   background-image: url("../images/wind.png");
   background-size: cover;
 }
-
 .more-info__detail-value {
   opacity: 0.54;
   margin-left: 10px;
 }
 
 .Day5CityName {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 34px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
@@ -1374,36 +1079,23 @@ body {
 }
 
 .chart {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .chart-btn__show {
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 110px;
   height: 28px;
   color: #ff6b09;
   background: rgba(255, 255, 255, 0);
   border: 0px;
   text-decoration: underline;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1412,19 +1104,15 @@ body {
 
 .chart-btn__close {
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 110px;
   height: 28px;
   color: #ff6b09;
   background: rgba(255, 255, 255, 0);
   border: 0px;
   text-decoration: underline;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1436,8 +1124,7 @@ body {
   height: 540px;
   padding-top: 39px;
   background: rgba(16, 33, 54, 0.8);
-  -webkit-box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
-          box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
+  box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
   border-radius: 34px;
 }
 
@@ -1448,5 +1135,4 @@ body {
 
 .show {
   visibility: visible;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

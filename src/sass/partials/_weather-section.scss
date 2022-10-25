@@ -1,36 +1,28 @@
 .weather-container {
   background-color: $section-bg;
-  margin-top: 20px;
-  // position: absolute;
+  box-shadow: 0px 5px 33px rgba(16, 33, 54, 0.6);
   display: flex;
+  justify-content: center;
+  margin-top: 20px;
   margin: 0 auto;
 
   @media screen and (max-width: $tablet) {
-    box-shadow: 0px 5px 33px rgba(16, 33, 54, 0.6);
     width: 280px;
     height: 190px;
-    // left: 20px;
-    // top: 166px;
     border-radius: 34px;
     margin-top: 20px;
   }
 
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
-    box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
     width: 500px;
     height: 300px;
-    // left: 134px;
-    // top: 258px;
     border-radius: 34px;
     margin-top: 20px;
   }
 
   @media screen and (min-width: $desktop) {
-    box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
     width: 450px;
     height: 300px;
-    // left: 830px;
-    // top: 259px;
     border-radius: 34px 34px 34px 34px;
     margin-top: 20px;
   }
@@ -39,7 +31,7 @@
 .min-max-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  align-content: center;
 }
 
 .weather-txt-container {
@@ -47,16 +39,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (max-width: $tablet) {
-    // flex-direction: column;
-    margin-top: 9px;
-  }
 
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
-    // flex-direction: column;
+    padding: 0;
   }
 
   @media screen and (min-width: $desktop) {
@@ -66,18 +51,18 @@
 .weather_section_city_pogoda {
   display: flex;
   flex-direction: row;
-  // margin-top: 20px;
+  align-items: center;
+
   @media screen and (min-width: $tablet) {
     flex-direction: column;
+    align-items: baseline;
   }
 }
 
 .weather_section_city_name {
-  // position: absolute;
   width: 101px;
   height: 26px;
   font-family: 'Lato';
-  // display: flex;
   align-items: center;
   text-align: center;
   color: #767d85;
@@ -107,11 +92,8 @@
 .today_current_temp {
   font-family: 'Lato';
   font-weight: 300;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.04em;
   color: #fff;
-  text-align: center;
 
   @media screen and (max-width: $tablet) {
     width: 75px;
@@ -136,11 +118,7 @@
 }
 
 .today_temp_txt {
-  // position: absolute;
   font-family: 'Lato';
-  // display: flex;
-  align-items: center;
-  text-align: center;
   color: #767d85;
 
   @media screen and (max-width: $tablet) {
@@ -172,10 +150,6 @@
 }
 
 .today_temp_value {
-  // position: absolute;
-  // display: flex;
-  align-items: center;
-  text-align: center;
   font-family: 'Lato';
   color: $txt-color;
 
@@ -203,4 +177,9 @@
     font-size: 18px;
     line-height: 22px;
   }
+}
+.min-max-txt-div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }

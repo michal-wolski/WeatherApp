@@ -18,11 +18,11 @@ export function mainWeather() {
     <div class="min-max-container">
     <div class="min-max-txt-div">
     <p class="today_temp_txt">min</p>
-    <p class="today_temp_value">${Math.round(min_temp)} &deg</p>
+    <p class="today_temp_value">${Math.round(min_temp)}&deg</p>
     </div>
-    <div class="min-max-value-div">
+    <div class="min-max-txt-div">
     <p class="today_temp_txt">max</p>
-    <p class="today_temp_value">${Math.round(max_temp)} &deg</p>
+    <p class="today_temp_value">${Math.round(max_temp)}&deg</p>
     </div>
     </div>
     </div>

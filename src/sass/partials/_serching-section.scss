@@ -1,7 +1,8 @@
-.form{
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 }
 
 .submit-btn {
@@ -16,7 +17,6 @@
 }
 
 .search-bar {
-  // position: absolute;
   background-color: $txt-color;
   border-radius: 30px;
   border-style: none;
