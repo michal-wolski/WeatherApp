@@ -1,4 +1,5 @@
 import { cityData } from '../index';
+import { currentWeather } from '../index';
 
 export function mainWeather() {
   const city_name = cityData.city.name;

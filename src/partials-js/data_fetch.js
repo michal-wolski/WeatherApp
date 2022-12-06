@@ -55,6 +55,28 @@ export async function getDefaultCityData() {
       return error;
     });
 }
+export function getCurrentWeather(inputValue) {
+  getCoordinates(inputValue)
+    .then(response => {
+      for (const city of response.data) {
+        coordinates.lat = city.lat;
+        coordinates.lon = city.lon;
+        axios
+          .get(
+            `https://api.openweathermap.org/data/2.5/weather?lat=${city.lat}&lon=${city.lon}&units=metric&appid=86882c431a5c1fa03f48939e3b313043`,
+          )
+          .then(weatherData => {
+            pushDataToLocalStorage2(weatherData.data);
+          });
+      }
+    })
+    .catch(error => {
+      return console.log(error);
+    });
+}
 function pushDataToLocalStorage(cityData) {
   saveStorage('cityData', cityData);
+}
+function pushDataToLocalStorage2(cityData) {
+  saveStorage('currentWeather', cityData);
 }

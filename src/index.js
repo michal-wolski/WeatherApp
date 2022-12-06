@@ -6,6 +6,7 @@ import {
   getDefaultCityData,
   getInputValue,
   inputValue,
+  getCurrentWeather,
 } from './partials-js/data_fetch';
 import { historyAddCity, historyCityVieve } from './partials-js/history_city';
 import { GenerateView5Days, Day5Hiden } from './partials-js/5days';
@@ -14,6 +15,7 @@ import { createHTMLMarkup, timer } from './partials-js/date_time_section';
 import { setTodayAsActive, set5DaysAsActive } from './partials-js/weather_buttons';
 
 export let cityData = loadStorage('cityData');
+export let currentWeather = loadStorage('currentWeather');
 
 // definicje przycisków
 const $searchInput = document.querySelector('input.search-bar');
@@ -32,14 +34,15 @@ $searchInput.addEventListener('input', getInputValue);
 $submitBtn.addEventListener('click', async ev => {
   ev.preventDefault();
   await getCityWeather(inputValue);
+  await getCurrentWeather(inputValue);
   historyAddCity(cityData);
   historyCityVieve(1);
 });
 $Days5Btn.addEventListener('click', GenerateView5Days);
 todayBtn.addEventListener('click', setTodayAsActive);
 $Days5Btn.addEventListener('click', set5DaysAsActive);
-$btnShow.addEventListener('click', showChart);
-$btnClose.addEventListener('click', closeChart);
+// $btnShow.addEventListener('click', showChart);
+// $btnClose.addEventListener('click', closeChart);
 // dodawanie zdarzen
 
 // podstawowe ładowanie danych
